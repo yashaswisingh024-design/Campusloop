@@ -1,286 +1,101 @@
-<div align="center">
+# CampusLoop – AI-Powered Student Marketplace
 
-# 🎓 CampusLoop
-
-### 🚀 The AI-Powered Student Marketplace
-
-*Buy • Sell • Swap • Repeat.*
-
-*A secure, AI-powered marketplace built exclusively for verified college students.*
-
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react)
-![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb)
-![Gemini AI](https://img.shields.io/badge/Gemini-AI-8E75FF?style=for-the-badge)
-
-**🌐 Connecting Students Through Smarter Commerce**
-
-</div>
+Buy. Sell. Swap. Repeat. An exclusive, trust-centric, and AI-optimized student marketplace designed exclusively for verified college networks.
 
 ---
 
-# 📖 About
+## 🚀 Key Features
 
-CampusLoop is a modern AI-powered marketplace designed exclusively for college students. It enables verified students to buy, sell, and swap books, electronics, hostel essentials, bicycles, furniture, calculators, lab equipment, and more within their campus community.
+### 🏢 verified Student Community
+- **Academic Verification**: Registration is restricted strictly to verified university email domains (`.edu`, `.ac.in`, etc.).
+- **Dorm-to-Dorm Meetups**: Facilitates localized handoffs at campus hotspots (libraries, dorm lobbies, or student cafes).
 
-Unlike traditional marketplaces, CampusLoop leverages Artificial Intelligence to simplify pricing, improve product listings, enhance discovery, and create a safer, student-first buying experience.
+### 🧠 Gemini AI Orchestrations
+- **AI Product Description Generator**: Sellers supply an item name and condition details, and Gemini generates professional, compelling listing copy.
+- **AI Price Recommendation Engine**: Evaluates item category, condition grade, and original purchase retail pricing to suggest a optimized target value.
+- **AI Smart Search**: Translates natural language requests (e.g., *"cheap calculus book under 50"*) into filter parameters dynamically.
+- **Real-Time AI Scam Detection**: Analyzes listing metadata and alerts sellers of dangerous patterns (demanding wire transfers or refusing meetups) with risk scores.
 
----
+### 💬 Real-Time Messaging & Seller Chatbot Replica
+- **Peer Chatrooms**: Secure real-time chat threads to negotiate prices and schedule handoffs.
+- **In-Character Seller Chatbot**: Simulated peer replies generated live using Gemini so you can test bargaining and coordination instantly.
+- **Attachment Simulators**: Support for sharing simulated images and documents.
 
-# ✨ Key Features
+### 🏆 Startup Gamification & Ambassador System
+- **Ambassador Mission Center**: Students take on tasks (distributing flyers, listing textbooks) to earn rewards.
+- **Viral Referral Engine**: High-fidelity sharing links and referral signups that reward peer circles with credits.
+- **College Leaderboard**: Active ranking highlighting top sellers, verified badges, and sales volume.
 
-## 🛒 Marketplace
-
-* Buy & Sell Products
-* Product Categories
-* Campus-based Listings
-* Advanced Search & Filters
-* Wishlist
-* Recently Viewed Products
-* Similar Product Recommendations
-
----
-
-## 🤖 AI-Powered Features
-
-* 🧠 AI Product Description Generator
-* 💰 Smart Price Recommendation
-* 🔍 Natural Language Product Search
-* 🛡 AI Scam Detection
-* ⭐ AI Deal Score
-* 🎯 Personalized Recommendations
+### 🛡️ Admin Trust & Safety Console
+- **System Monitoring**: Live diagnostics tracking listing counts, users, and message logs.
+- **AI Scam Audit Queue**: Holds flagged or risky listings for admin review and final approval.
 
 ---
 
-## 🎓 Student Verification
+## 🛠️ Tech Stack
 
-* College Email Verification
-* Verified Student Profiles
-* Trusted Seller Badges
-* Ratings & Reviews
-* Campus-specific Marketplace
-
----
-
-## 💬 Communication
-
-* Real-Time Chat
-* Typing Indicators
-* Read Receipts
-* Image Sharing
-* Instant Notifications
+- **Frontend**: React 19, Tailwind CSS (fluid responsive layout, twilight palette), Lucide Icons, Motion.
+- **Backend**: Node.js, Express, tsx (Typescript Execution), esbuild (for server compilation).
+- **Database**: Local JSON-based Persistent File DB (`server/db.ts`) equipped with complete seeding and CRUD queries.
+- **AI Engine**: `@google/genai` (utilizing Gemini 3.5 Flash for pricing analysis, copywriting, smart searches, and agent chatbots).
 
 ---
 
-## 📊 Dashboard
+## 📁 Folder Structure
 
-* Listing Analytics
-* Sales Overview
-* Wishlist Management
-* Purchase History
-* Profile Management
-
----
-
-## 👑 Admin Panel
-
-* User Management
-* Listing Moderation
-* Scam Detection
-* Reports Management
-* Platform Analytics
-
----
-
-# 🌟 Why CampusLoop?
-
-Traditional marketplaces are built for everyone.
-
-CampusLoop is built **specifically for students.**
-
-By combining AI, verified college communities, and an intuitive user experience, CampusLoop creates a trusted ecosystem where students can exchange resources safely, affordably, and sustainably.
-
----
-
-# 🚀 Tech Stack
-
-### Frontend
-
-* React.js
-* Tailwind CSS
-* React Router
-* Framer Motion
-* Axios
-
-### Backend
-
-* Node.js
-* Express.js
-* JWT Authentication
-* Socket.io
-* REST APIs
-
-### Database
-
-* MongoDB Atlas
-
-### AI
-
-* Google Gemini API
-
-### Deployment
-
-* Vercel
-* Render
-
----
-
-# 📂 Project Structure
-
-```
-CampusLoop
-│
-├── client
-│   ├── assets
-│   ├── components
-│   ├── pages
-│   ├── hooks
-│   ├── services
-│   ├── context
-│   └── utils
-│
-├── server
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── routes
-│   ├── sockets
-│   └── utils
-│
-├── public
-├── README.md
-└── package.json
+```text
+/
+├── .env.example            # Environment declarations for API keys
+├── package.json            # Node scripts, build pipelines, and dependencies
+├── tsconfig.json           # Shared TypeScript configuration
+├── vite.config.ts          # Vite asset pipeline configuration
+├── server.ts               # Primary full-stack server and REST endpoints
+├── data.json               # Local persistent database file
+├── server/
+│   ├── db.ts               # Database seeds and CRUD query interfaces
+│   └── gemini.ts           # Gemini Flash SDK connections
+└── src/
+    ├── main.tsx            # App entrypoint
+    ├── App.tsx             # State router, layout frame, and tabs
+    ├── index.css           # Global styles and custom keyframes
+    ├── types.ts            # Shared TypeScript type definitions
+    └── components/
+        ├── LandingPage.tsx # Hero visualizer, features list, and testimonials
+        ├── AuthModal.tsx   # Verified registration and recovery
+        ├── Marketplace.tsx # Search engine, listing Wizard, and product drawers
+        ├── Messaging.tsx   # Thread layouts and simulated chatbots
+        ├── Ambassador.tsx  # Gamification, sharing link copy, and leaderboard
+        └── AdminPanel.tsx  # Diagnostics, flagged listings, and audit panel
 ```
 
 ---
 
-# 🧩 Core Modules
+## 🏁 Installation & Development Guide
 
-* Authentication
-* Marketplace
-* AI Engine
-* Wishlist
-* Chat System
-* Notifications
-* Dashboard
-* Admin Portal
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
----
+### 1. Set Up Environment Variables
+Create a `.env` file in the root directory (or use AI Studio secrets panel):
+```env
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+APP_URL="http://localhost:3000"
+```
 
-# 📸 Preview
-
-## Landing Page
-
-Modern startup-inspired UI with glassmorphism, gradients, responsive layouts, and smooth animations.
-
-## Marketplace
-
-Browse verified listings from students across your campus.
-
-## Dashboard
-
-Track listings, sales, messages, and profile performance.
-
-## AI Assistant
-
-Generate descriptions, suggest prices, detect scams, and discover products using natural language.
-
----
-
----
-
-# ⚙️ Installation
-
-Clone the repository
-
+### 2. Run Locally
+Install the dependencies and boot up the development server:
 ```bash
-git clone https://github.com/yourusername/CampusLoop.git
-```
-
-Navigate into the project
-
-```bash
-cd CampusLoop
-```
-
-Install frontend dependencies
-
-```bash
-cd client
 npm install
 npm run dev
 ```
-
-Install backend dependencies
-
-```bash
-cd ../server
-npm install
-npm run dev
-```
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
 ---
 
-# 🎯 Roadmap
+## 📈 Future Product Roadmap
 
-* Mobile Application
-* Secure Payment Gateway
-* Campus Feed
-* Book Rental System
-* Roommate Finder
-* Student Freelance Marketplace
-* Internship Board
-* AI Voice Assistant
-* Carbon Savings Tracker
-* Multi-University Expansion
-
----
-
-# 🌱 Sustainability
-
-CampusLoop encourages the reuse of educational resources, reducing waste and making quality products more affordable for students.
-
-By extending the lifecycle of books, electronics, and hostel essentials, the platform promotes sustainable consumption while helping students save money.
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push your branch
-5. Open a Pull Request
-
----
-
-# ⭐ Show Your Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub. It helps others discover the project and supports future development.
-
----
-
-<div align="center">
-
-# 🎓 CampusLoop
-
-### *Where Student Resources Never Go to Waste.*
-
-**Designed & Developed by Yashaswi Singh**
-
-Made with ❤️ using React, Node.js, MongoDB & Generative AI.
-
-</div>
+1. **Integrated Stripe Swaps**: Enable holding funds in escrow until both college students scan a peer QR code at meetup confirmation.
+2. **True Socket.io Event Pipes**: Upgrade simulated polling to web sockets for live, low-latency client synchronization.
+3. **Multi-File Image Uploads**: Add support for multiple high-resolution hostel item images.
+4. **Google Maps platform Campus Geofencing**: Render interactive map dots pinpointing verified safe trade hubs across campuses.

@@ -1,0 +1,6 @@
+{
+  "name": "CampusLoop",
+  "description": "AI-Powered Student Marketplace exclusively for verified college communities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
