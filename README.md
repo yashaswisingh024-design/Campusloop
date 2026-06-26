@@ -8,9 +8,6 @@
 
 *A secure, AI-powered marketplace built exclusively for verified college students.*
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/campusloop?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/campusloop?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react)
 ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb)
