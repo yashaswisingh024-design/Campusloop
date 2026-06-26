@@ -6,24 +6,6 @@
 
 *Buy • Sell • Swap • Repeat.*
 
-<img src="https://img.shields.io/badge/Status-In%20Development-6C63FF?style=for-the-badge" />
-<img src="https://img.shields.io/badge/License-MIT-8B5CF6?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Built%20with-React%20%7C%20Node.js%20%7C%20MongoDB-blueviolet?style=for-the-badge" />
-<img src="https://img.shields.io/badge/AI-Gemini-purple?style=for-the-badge" />
-
-### 🌐 Connecting Students Through Smarter Commerce
-
-</div>
-
----
-# 🎓 CampusLoop
-
-<div align="center">
-
-### 🚀 The AI-Powered Student Marketplace
-
-**Buy • Sell • Swap • Repeat**
-
 *A secure, AI-powered marketplace built exclusively for verified college students.*
 
 ![GitHub stars](https://img.shields.io/github/stars/yourusername/campusloop?style=for-the-badge)
@@ -218,22 +200,6 @@ Track listings, sales, messages, and profile performance.
 Generate descriptions, suggest prices, detect scams, and discover products using natural language.
 
 ---
-
-# 🔒 Environment Variables
-
-```env
-MONGODB_URI=
-
-JWT_SECRET=
-
-GEMINI_API_KEY=
-
-CLOUDINARY_CLOUD_NAME=
-
-CLOUDINARY_API_KEY=
-
-CLOUDINARY_API_SECRET=
-```
 
 ---
 
