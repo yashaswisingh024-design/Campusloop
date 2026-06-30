@@ -22,6 +22,8 @@
 
 ---
 
+#LIVE LINK - https://campusloop-122123918416.asia-southeast1.run.app
+
 # 📖 Overview
 
 CampusLoop is a **next-generation AI-powered marketplace** designed exclusively for verified college students.
